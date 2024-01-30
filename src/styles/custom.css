@@ -17,10 +17,13 @@
 			60rem 30rem;
 }
 
+@media (min-width: 800px) {
+	[data-has-hero] .hero {
+			margin-bottom: -5rem;
+	}
 
-[data-has-hero] .hero {
-	@media (min-width: 800px) {
-		margin-bottom: -5rem;
+	.hero:where(.astro-jbfsktt5) {
+    margin-top: -5rem;
 	}
 }
 
@@ -37,9 +40,5 @@
 
 .hero img { 
     border-radius: 10px;
-}
-
-.hero:where(.astro-jbfsktt5) {
-    margin-top: -5rem;
 }
 
