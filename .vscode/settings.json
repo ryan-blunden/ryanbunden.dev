@@ -1,0 +1,10 @@
+{
+  "emmet.includeLanguages": {
+    "mdx": "html",
+    "md": "html"
+  },
+  "cSpell.words": [
+    "astro",
+    "astrojs"
+  ]
+}
