@@ -9,6 +9,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Ryan Blunden',
+      head: [{
+        tag: 'meta',
+        attrs: {
+          property: 'og:image',
+          content: 'https://ryanblunden.tech/og-image.jpg',
+        },
+      }],
       social: {
         linkedin: 'https://www.linkedin.com/in/ryanblunden/',
         github: 'https://github.com/ryan-blunden',
