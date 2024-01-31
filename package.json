@@ -12,6 +12,7 @@
   "dependencies": {
     "@astro-community/astro-embed-youtube": "^0.4.4",
     "@astrojs/check": "^0.4.1",
+    "@astrojs/partytown": "^2.0.4",
     "@astrojs/starlight": "^0.16.0",
     "@astrojs/starlight-tailwind": "^2.0.1",
     "@astrojs/tailwind": "^5.1.0",

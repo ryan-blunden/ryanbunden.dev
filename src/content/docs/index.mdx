@@ -19,6 +19,7 @@ hero:
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import GoogleAnalytics from '../../components/google-analytics.astro';
 import TestimonialGrid from '../../components/testimonial-grid.astro';
 import Testimonial from '../../components/testimonial.astro';
 import FAQList from '../../components/faq-list.astro';
@@ -27,6 +28,8 @@ import CTA from '../../components/cta.astro';
 import YouTubeGrid from '../../components/youtube-grid.astro';
 import ShowCaseCard from '../../components/showcase-card.astro';
 import FluidGrid from '../../components/fluid-grid.astro';
+
+<GoogleAnalytics/>
 
 <CardGrid>
   <Card title="About Me">
