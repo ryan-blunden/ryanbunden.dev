@@ -19,7 +19,7 @@ export default defineConfig({
       social: {
         linkedin: 'https://www.linkedin.com/in/ryanblunden/',
         github: 'https://github.com/ryan-blunden',
-        email: 'mailto:ryan.blunden@gmail.com',
+        email: 'mailto:ryan.blunden@gmail.com?subject=Enquiry+from+ryanblunden.tech',
       },
       customCss: ['./src/styles/tailwind.css', './src/styles/custom.css'],
     }),
