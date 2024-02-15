@@ -1,4 +1,4 @@
-# Site for ryanblunden.tech
+# Site for ryanblunden.dev
 
 Built with the [Starlight Starter Kit](https://starlight.astro.build) that includes Tailwind:
 
