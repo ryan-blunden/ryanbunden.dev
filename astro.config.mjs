@@ -32,4 +32,7 @@ export default defineConfig({
       },
     }),
   ],
+  redirects: {
+    '/call': 'https://calendly.com/ryan-blunden'
+  }
 });
