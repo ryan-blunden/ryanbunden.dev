@@ -90,7 +90,7 @@ import FluidGrid from '../../components/fluid-grid.astro';
   </Testimonial>
 </TestimonialGrid>
 
-<h2 class="text-center">Services</h2>
+<h2 id="services" class="text-center">Services</h2>
 
 <CardGrid>
   <Card title="Video Production" icon="youtube">
@@ -128,7 +128,7 @@ import FluidGrid from '../../components/fluid-grid.astro';
   </Card>
 </CardGrid>
 
-<h2 class="text-center">My Work</h2>
+<h2 id="my-work" class="text-center">My Work</h2>
 
 <Tabs>
 	<TabItem label="Videos">
@@ -252,13 +252,19 @@ import FluidGrid from '../../components/fluid-grid.astro';
 			target="_blank"
 		/>
 	</TabItem>
-	<TabItem label="White Papers & Case Studies">
-		<FluidGrid>
-			<ShowCaseCard
-				title="Redefining Secrets Management White Paper"
-				href="Redefining-Secrets-Management-Doppler-SecretOps-Platform.pdf"
+	<TabItem label="Case Studies">
+		<FluidGrid minColumnWidth="25rem">
+		<ShowCaseCard
+				title="Doppler Hyper Case Study"
+				href="https://www.doppler.com/case-studies/hyper"
 				target="_blank"
-				thumbnail="doppler-ebook.jpg"
+				thumbnail="doppler-case-study.jpg"
+			/>
+			<ShowCaseCard
+				title="Sourcegraph Lyft Case Study"
+				href="/Lyft-Sourcegraph-case-study.pdf"
+				target="_blank"
+				thumbnail="lyft-case-study.jpg"
 			/>
 			<ShowCaseCard
 				title="Sourcegraph Quantcast Case Study"
@@ -271,6 +277,16 @@ import FluidGrid from '../../components/fluid-grid.astro';
 				href="/Thorn%20Sourcegraph%20case%20study%20v2.pdf"
 				target="_blank"
 				thumbnail="thorn-case-study.jpg"
+			/>
+		</FluidGrid>
+    </TabItem>
+		<TabItem label="White Papers">
+		<FluidGrid minColumnWidth="60rem">
+			<ShowCaseCard
+				title="Redefining Secrets Management White Paper"
+				href="Redefining-Secrets-Management-Doppler-SecretOps-Platform.pdf"
+				target="_blank"
+				thumbnail="doppler-ebook.jpg"
 			/>
 		</FluidGrid>
     </TabItem>
@@ -357,7 +373,7 @@ import FluidGrid from '../../components/fluid-grid.astro';
 		</TabItem>
 </Tabs>
 
-<h2 class="text-center">FAQs</h2>
+<h2 id="faqs" class="text-center">FAQs</h2>
 
 <FAQList title="FAQs">
   <FAQ title="How do you charge for your services?">
