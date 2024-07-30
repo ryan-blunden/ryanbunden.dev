@@ -58,9 +58,12 @@ import FluidGrid from '../../components/fluid-grid.astro';
 </CardGrid>
 
 <TestimonialGrid title="Testimonials">
-  <Testimonial name="Brian Vallelunga" image="brian" title="CEO, Doppler">
-    Highly recommend Ryan! He produces incredibly high quality content and
-    really understands developers!
+  <Testimonial
+    name="Lindsay Neeson"
+    image="lindsay"
+    title="Sr. Digital Marketing Manager, Doppler"
+  >
+    Ryan did an exceptional job on our recent Doppler white paper. He has a keen eye for condensing complex ideas into clear and concise points while communicating his work every step of the way. The white paper is informative, engaging, and a valuable asset to our team. 
   </Testimonial>
   <Testimonial
     name="Yasmine Helmy"
@@ -87,6 +90,10 @@ import FluidGrid from '../../components/fluid-grid.astro';
     training, professional services, Product management, and marketing to better
     understand and communicate container security in the DevOps language to our
     customers and to our colleagues.
+  </Testimonial>
+  <Testimonial name="Brian Vallelunga" image="brian" title="CEO, Doppler">
+    Highly recommend Ryan! He produces incredibly high quality content and
+    really understands developers!
   </Testimonial>
 </TestimonialGrid>
 
@@ -133,51 +140,61 @@ import FluidGrid from '../../components/fluid-grid.astro';
 <Tabs>
 	<TabItem label="Videos">
 		<YouTubeGrid
-			videos={[
+			videos={[	
 				{
-					href: 'https://www.youtube.com/watch?v=zLMEN9zuLJY',
-					title: 'Bryntum Conference Booth Demo Video',
-					description: 'Looping video for Bryntum showcasing their web components.',
+					href: "https://www.youtube.com/watch?v=RU8ZRswPb_s",
+					title: "Doppler vs Traditional Secrets Managers",
+					description: "Shows how Doppler differs from traditional secrets managers.",
 				},
 				{
-					href: 'https://youtu.be/PGy5xkzmTS0',
-					title: 'Doppler Enterprise Demo',
-					description: 'Quick 5 minute video to showcase Doppler\'s enterprise capabilities.',
+					href: "https://www.youtube.com/watch?v=GHAZNmvO5gY",
+					title: "Bryntum Home Page Video",
+					description: "Promotional video showcasing Bryntum's web components .",
 				},
 				{
-					href: 'https://youtu.be/us_NlOW3PFE',
-					title: 'SecretOps Beginners Series | Part 1',
-					description: 'Part explainer (SecretOps) and how to get started with Doppler.',
+					href: "https://www.youtube.com/watch?v=zLMEN9zuLJY",
+					title: "Bryntum Conference Booth Demo Video",
+					description: "Looping video for Bryntum showcasing their web components.",
 				},
 				{
-					href: 'https://youtu.be/p8Tci4f2cuQ',
-					title: 'SecretOps Beginners Series | Part 2',
-					description: 'Explains Doppler’s Team Management features.',
+					href: "https://youtu.be/PGy5xkzmTS0",
+					title: "Doppler Enterprise Demo",
+					description: "Quick 5 minute video to showcase Doppler's enterprise capabilities.",
 				},
 				{
-					href: 'https://youtu.be/3AtGZHXl0GQ',
-					title: 'SecretOps Beginners Series | Part 3',
-					description: 'Explains Doppler’s secrets orchestration model.',
+					href: "https://youtu.be/us_NlOW3PFE",
+					title: "SecretOps Beginners Series | Part 1",
+					description: "Part explainer (SecretOps) and how to get started with Doppler.",
 				},
 				{
-					href: 'https://youtu.be/pjnma9yf3G8',
-					title: 'SecretOps Beginners Series | Part 4',
-					description: 'Showcases Doppler’s secrets management UI features.',
+					href: "https://youtu.be/p8Tci4f2cuQ",
+					title: "SecretOps Beginners Series | Part 2",
+					description: "Explains Doppler’s Team Management features.",
 				},
 				{
-					href: 'https://youtu.be/d9hqePhFu0Y',
-					title: 'SecretOps Beginners Series | Part 5',
-					description: 'Doppler’s database and API secrets rotation in action.',
+					href: "https://youtu.be/3AtGZHXl0GQ",
+					title: "SecretOps Beginners Series | Part 3",
+					description: "Explains Doppler’s secrets orchestration model.",
 				},
 				{
-					href: 'https://youtu.be/wOkow-qb_Ys',
-					title: 'Doppler 2 Minute Overview',
-					description: 'General overview of Doppler for managing application config and secrets.',
+					href: "https://youtu.be/pjnma9yf3G8",
+					title: "SecretOps Beginners Series | Part 4",
+					description: "Showcases Doppler’s secrets management UI features.",
 				},
 				{
-					href: 'https://youtu.be/a_5ewsxTtUA',
-					title: 'Doppler Kubernetes CLI Integration',
-					description: 'How to use the Doppler CLI to inject secrets into a Kubernetes deployment.',
+					href: "https://youtu.be/d9hqePhFu0Y",
+					title: "SecretOps Beginners Series | Part 5",
+					description: "Doppler’s database and API secrets rotation in action.",
+				},
+				{
+					href: "https://youtu.be/wOkow-qb_Ys",
+					title: "Doppler 2 Minute Overview",
+					description: "General overview of Doppler for managing application config and secrets.",
+				},
+				{
+					href: "https://youtu.be/a_5ewsxTtUA",
+					title: "Doppler Kubernetes CLI Integration",
+					description: "How to use the Doppler CLI to inject secrets into a Kubernetes deployment.",
 				},
 			]}
 		/>
@@ -281,7 +298,13 @@ import FluidGrid from '../../components/fluid-grid.astro';
 		</FluidGrid>
     </TabItem>
 		<TabItem label="White Papers">
-		<FluidGrid minColumnWidth="60rem">
+		<FluidGrid>
+			<ShowCaseCard
+				title="The Future of Secrets Management White Paper"
+				href="Doppler-TheFutureOfSecretsManagement.pdf"
+				target="_blank"
+				thumbnail="doppler-whitepaper.png"
+			/>
 			<ShowCaseCard
 				title="Redefining Secrets Management White Paper"
 				href="Redefining-Secrets-Management-Doppler-SecretOps-Platform.pdf"
