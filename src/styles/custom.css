@@ -46,3 +46,26 @@ site-search {
 	display: none;
 }
 
+
+/*___ FAQs ___*/
+
+.sl-markdown-content summary:not(:where(.not-content *)) {
+	display: flex;
+}
+.sl-markdown-content details:not(:where(.not-content *)) {
+	--sl-details-border-color: inherit;
+}
+
+.sl-markdown-content details:not(:where(.not-content *)) {
+	border-inline-start: 1px solid var(--sl-details-border-color)
+}
+
+.sl-markdown-content details:not([open]):hover:not(:where(.not-content *)), .sl-markdown-content details:has(> summary:hover):not(:where(.not-content *)) {
+	--sl-details-border-color: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .sl-markdown-content summary:not(:where(.not-content *))::before {
+		content: none;
+	}
+}
